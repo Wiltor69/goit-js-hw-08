@@ -5,7 +5,7 @@ import throttle from "lodash.throttle"
 const videoEl = document.getElementById("vimeo-player");
 const player = new Player(videoEl);
 
-const timeUpdate = throttle(seconds => {
+const timeUpdate = throttle(seconds => { 
     
     localStorage.setItem('videoplayer-current-time', seconds);
 }, 1000);  
